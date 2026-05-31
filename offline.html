@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline - JobsKaru</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f9fafb;
+        color: #111827;
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+        max-width: 400px;
+      }
+      .icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #111827;
+      }
+      p {
+        color: #6b7280;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .brand {
+        font-size: 1.25rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+      }
+      .brand span { color: #FFD700; }
+      button {
+        background: #FFD700;
+        color: #111827;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">📵</div>
+      <div class="brand">Job<span>Karo</span></div>
+      <h1>Aap Offline Hain</h1>
+      <p>Internet connection nahi hai. Please check your connection and try again.</p>
+      <button onclick="window.location.reload()">Dobara Try Karo</button>
+    </div>
+  </body>
+</html>
