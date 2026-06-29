@@ -3,12 +3,15 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",
     "useDefineForClassFields": true,
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
     "incremental": true,
 
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
@@ -16,13 +19,22 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
     "strict": true,
 
+    "baseUrl": ".",
     "paths": {
-      "@/convex/*": ["./convex/*"],
-      "@/*": ["./src/*"]
+      "@/convex/*": [
+        "./convex/*"
+      ],
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["./src"]
+
+  "include": [
+    "./*.ts",
+    "./*.tsx",
+    "./convex/**/*.ts"
+  ]
 }
